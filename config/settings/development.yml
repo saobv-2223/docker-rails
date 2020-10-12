@@ -1,1 +1,0 @@
-valid_email_regex: !ruby/regex /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
