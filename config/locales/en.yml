@@ -1,0 +1,143 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  en: "English"
+  vi: "Vietnamese"
+  home: "Home"
+  help: "Help"
+  ror: "Ruby on Rails"
+  log_in: "Log in"
+  sign_up: "Sign up"
+  base_title: "Ruby on Rails Tutorials"
+  profile: "Profile"
+  setting: "Setting"
+  simple_pages:
+    home:
+      title: "This is home page"
+      welcome: "Welcome to Ruby on Rails Tutorials"
+    help:
+      title: "This is help page"
+  auths:
+    login_fail: "Email or password is incorrect"
+    login_success: "You have logged in successfully"
+    logout: "Log out"
+    logout_success: "Logged out successfully"
+    remember_me: "Remember me"
+    no_have_account: "You don't have account ?"
+    not_login: "You have to log in"
+    incorrect_user: "Your access was denied"
+    status: "Status"
+    verified: "Activated"
+    un_verified: "Un-activated"
+    mail:
+      greeting: "Hi"
+      subject: "Account activation"
+      content: "Welcome to Sun* Education! Click on the link below to active your account."
+      notice: "Please, check your email to activate your account"
+      activate_success: "Activated account successfully"
+      activate_fail: "Activated account un-successfully"
+      no_activated: "Your account is not activated, check mail box for activation link"
+    forget_password:
+      forget_password: "Forgot password ?"
+      title: "Request reset password"
+      button_send: "Send"
+      send_request_success: "Check your email to reset your password"
+      error_token_or_unactivated: "Sorry, the request does not exist or your account is not activated"
+      reset_password_success: "You have just changed password successfully"
+      reset_password_fail: "You have just changed password un-successfully"
+  users:
+    no_exist: "This account dose not exist"
+    new:
+      title: "Sign up"
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Confirmation"
+      signup_success: "You registered successfully"
+      signup_fail: "You registered unsuccessfully"
+    edit:
+      update: "Update"
+      title: "Update your profile"
+      update_success: "Updated successfully"
+      update_fail: "Updated un-successfully"
+    index:
+      title: "List all users"
+      avatar: "Avatar"
+      delete: "Delete"
+      confirm: "Are you sure to delete this user"
+      delete_success: "You deleted successfully"
+      delete_fail: "You deleted unsuccessfully"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: "This email address was existed"
+              invalid: "Email address must be in the correct format"
+              blank: "Email address can not be null"
+            name:
+              blank: "Name can not be null"
+            password_confirmation:
+              confirmation: "Password confirmation does not match"
+              blank: "Password can not be null"
+        micro_post:
+          attributes:
+            content:
+              blank: "Content can not be null"
+            image:
+              content_type_invalid: "Chỉ hỗ trợ file ảnh .png, .jpg hoặc .jpeg"
+  views:
+    pagination:
+      first: "« FIRST"
+      last: "LAST »"
+      previous: "‹ PREV"
+      next: "NEXT ›"
+      truncate: "…"
+  microposts:
+    title: "Microposts"
+    posted: "Posted"
+    time_ago: "ago"
+    create_success: "Created micro post successfully"
+    create_fail: "Created micro post un-successfully"
+    write: "What's on your mind...?"
+    delete: "Are you sure to delete this micro post ?"
+    delete_success: "You deleted micro post successfully"
+    delete_fail: "You deleted micro post un-successfully"
+    image_size: "Maximum file size upload must be smaller than 5MB"
+    post: "Post"
+  follow:
+    follower_title: "Followers"
+    following_title: "Following"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    action_fail: "Somethings went wrong, try again later"
