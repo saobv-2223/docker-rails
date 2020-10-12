@@ -9,7 +9,8 @@
 * First, we build environment and config for our project.
 ```
 docker-compose build
-docker-compose run app bash (now, we'll access to virtual environment)
+docker-compose up
+docker-compose exec app bash (now, we'll access to virtual environment)
 rails new . --database=mysql
 cp config/database.yml config/database.yml.example 
 ```  
@@ -22,7 +23,7 @@ After that, open `config/database.yml` and change:
 ```
 * Change database name and open previous terminal window that in virtual environment. Run `rails db:create` 
 to create database. 
-* Now, we run `docker-compose up`, open browser and access:
+* Now, we press `Ctrl C` to stop docker and run `docker-compose up` again, open browser and access:
 ```
 localhost:3000 (to access Rails project)
 localhost:8080 (to access Adminer)
